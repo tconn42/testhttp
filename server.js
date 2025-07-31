@@ -15,3 +15,8 @@ const server = app.listen(http_port, () =>
 });
 
 app.use(express.static('public'));
+
+app.get('/bogus', async (req, res) =>
+{
+ // Needed just to keep node running after listen
+});
