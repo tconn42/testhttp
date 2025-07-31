@@ -3,8 +3,8 @@ const http = require('http');
 //const https = require('https');
 const express = require('express');
 
-const http_port = 80;
-//const https_port = 443;
+const http_port = 3000;
+//const https_port = 3443;
 
 const app = express();
 
@@ -16,7 +16,3 @@ const server = app.listen(http_port, () =>
 
 app.use(express.static('public'));
 
-app.get('/bogus', async (req, res) =>
-{
- // Needed just to keep node running after listen
-});
